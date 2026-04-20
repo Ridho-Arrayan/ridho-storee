@@ -147,7 +147,6 @@
     .produk-card::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--purple));opacity:0;transition:opacity .35s;}
     .produk-card:hover::after{opacity:1;}
 
-    /* ── PRODUCT ICON: image-based ── */
     .p-icon{
       width:46px;height:46px;border-radius:13px;
       overflow:hidden;display:flex;align-items:center;justify-content:center;
@@ -157,7 +156,6 @@
       width:100%;height:100%;object-fit:cover;border-radius:13px;
       display:block;
     }
-    /* fallback color per brand — shown when img fails */
     .p-icon.ic-wa   { background:rgba(37,211,102,.15); }
     .p-icon.ic-ig   { background:rgba(225,48,108,.15); }
     .p-icon.ic-tt   { background:rgba(255,255,255,.08); }
@@ -354,7 +352,6 @@
       <!-- Roblox -->
       <div class="jasa-card card-orange reveal rd1">
         <div class="jasa-top">
-          <!-- ★ Ganti emoji jadi logo Roblox -->
           <div class="jasa-icon icon-orng">
             <img src="assets/roblox-logo.png" alt="Roblox"/>
           </div>
@@ -374,7 +371,6 @@
       <!-- Web Dev -->
       <div class="jasa-card card-blue reveal rd2">
         <div class="jasa-top">
-          <!-- ★ Tidak ada logo khusus web dev, pakai SVG inline agar tetap tematik -->
           <div class="jasa-icon icon-blue" style="background:var(--blue-dim);">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
@@ -422,9 +418,7 @@
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════
-     PRODUK DIGITAL
-═══════════════════════════════════════════ -->
+<!-- PRODUK DIGITAL -->
 <div class="divider"></div>
 <div class="produk-bg" id="produk">
   <div class="sec">
@@ -445,9 +439,7 @@
       <!-- WhatsApp Channel -->
       <div class="produk-card reveal" data-cat="smm" onclick="openM('wac')">
         <div class="p-icon ic-wa">
-          <!-- ★ Logo WhatsApp: assets/whatsapp-logo.png -->
-          <img src="assets/whatsapp-logo.png" alt="WhatsApp"
-               onerror="this.style.display='none';this.parentElement.innerHTML='📢'"/>
+          <img src="assets/whatsapp-logo.png" alt="WhatsApp" onerror="this.style.display='none';this.parentElement.innerHTML='📢'"/>
         </div>
         <span class="p-badge pb-smm">SMM</span>
         <div class="p-name">Saluran WhatsApp</div>
@@ -463,9 +455,7 @@
       <!-- Instagram -->
       <div class="produk-card reveal rd1" data-cat="smm" onclick="openM('ig')">
         <div class="p-icon ic-ig">
-          <!-- ★ Logo Instagram: assets/instagram-logo.png -->
-          <img src="assets/instagram-logo.png" alt="Instagram"
-               onerror="this.style.display='none';this.parentElement.innerHTML='📸'"/>
+          <img src="assets/instagram-logo.png" alt="Instagram" onerror="this.style.display='none';this.parentElement.innerHTML='📸'"/>
         </div>
         <span class="p-badge pb-smm">SMM</span>
         <div class="p-name">Instagram</div>
@@ -481,9 +471,7 @@
       <!-- TikTok -->
       <div class="produk-card reveal rd2" data-cat="smm" onclick="openM('tt')">
         <div class="p-icon ic-tt">
-          <!-- ★ Logo TikTok: assets/tiktok-logo.png -->
-          <img src="assets/tiktok-logo.png" alt="TikTok"
-               onerror="this.style.display='none';this.parentElement.innerHTML='🎵'"/>
+          <img src="assets/tiktok-logo.png" alt="TikTok" onerror="this.style.display='none';this.parentElement.innerHTML='🎵'"/>
         </div>
         <span class="p-badge pb-smm">SMM</span>
         <div class="p-name">TikTok Likes & Views</div>
@@ -499,9 +487,7 @@
       <!-- CapCut -->
       <div class="produk-card reveal" data-cat="prem" onclick="openM('cc')">
         <div class="p-icon ic-cc">
-          <!-- ★ Logo CapCut: assets/capcut-logo.png -->
-          <img src="assets/capcut-logo.png" alt="CapCut"
-               onerror="this.style.display='none';this.parentElement.innerHTML='✂️'"/>
+          <img src="assets/capcut-logo.png" alt="CapCut" onerror="this.style.display='none';this.parentElement.innerHTML='✂️'"/>
         </div>
         <span class="p-badge pb-prem">Premium</span>
         <div class="p-name">CapCut Pro</div>
@@ -516,9 +502,7 @@
       <!-- Alight Motion -->
       <div class="produk-card reveal rd1" data-cat="prem" onclick="openM('am')">
         <div class="p-icon ic-am">
-          <!-- ★ Logo Alight Motion: assets/alightmotion-logo.png -->
-          <img src="assets/alightmotion-logo.png" alt="Alight Motion"
-               onerror="this.style.display='none';this.parentElement.innerHTML='🌀'"/>
+          <img src="assets/alightmotion-logo.png" alt="Alight Motion" onerror="this.style.display='none';this.parentElement.innerHTML='🌀'"/>
         </div>
         <span class="p-badge pb-prem">Premium</span>
         <div class="p-name">Alight Motion Pro</div>
@@ -532,9 +516,7 @@
       <!-- Bstation -->
       <div class="produk-card reveal rd2" data-cat="prem" onclick="openM('bs')">
         <div class="p-icon ic-bs">
-          <!-- ★ Logo Bstation: assets/bstation-logo.png -->
-          <img src="assets/bstation-logo.png" alt="Bstation"
-               onerror="this.style.display='none';this.parentElement.innerHTML='📺'"/>
+          <img src="assets/bstation-logo.png" alt="Bstation" onerror="this.style.display='none';this.parentElement.innerHTML='📺'"/>
         </div>
         <span class="p-badge pb-prem">Premium</span>
         <div class="p-name">Bstation</div>
@@ -548,9 +530,7 @@
       <!-- Netflix -->
       <div class="produk-card reveal" data-cat="prem" onclick="openM('nf')">
         <div class="p-icon ic-nf">
-          <!-- ★ Logo Netflix: assets/netflix-logo.png -->
-          <img src="assets/netflix-logo.png" alt="Netflix"
-               onerror="this.style.display='none';this.parentElement.innerHTML='🎬'"/>
+          <img src="assets/netflix-logo.png" alt="Netflix" onerror="this.style.display='none';this.parentElement.innerHTML='🎬'"/>
         </div>
         <span class="p-badge pb-prem">Premium</span>
         <div class="p-name">Netflix</div>
@@ -565,9 +545,7 @@
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════
-     JOKI
-═══════════════════════════════════════════ -->
+<!-- JOKI -->
 <div class="divider"></div>
 <div class="produk-bg" id="joki">
   <div class="sec">
@@ -579,26 +557,27 @@
 
     <div class="produk-grid" id="jgrid">
 
-      <!-- Joki Roblox Followers -->
+      <!-- ★ UPDATED: Joki Roblox Followers — harga & teks keamanan diperbarui -->
       <div class="produk-card joki-roblox reveal" onclick="openM('rbx')">
         <div class="p-icon ic-rbx">
-          <!-- ★ assets/roblox-logo.png — sama seperti di service card -->
-          <img src="assets/roblox-logo.png" alt="Roblox"
-               onerror="this.style.display='none';this.parentElement.innerHTML='🎮'"/>
+          <img src="assets/roblox-logo.png" alt="Roblox" onerror="this.style.display='none';this.parentElement.innerHTML='🎮'"/>
         </div>
         <span class="p-badge pb-joki">JOKI</span>
         <div class="p-name">Roblox Followers</div>
-        <div class="p-desc">Increase your Roblox profile followers — 100% manual joki, bukan bot!</div>
+        <div class="p-desc">Tambah followers profil Roblox kamu — permanent & aman, cukup kirim username!</div>
+        <!-- ★ UPDATED safety text -->
         <div class="p-safety">
           <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
           </svg>
-          Akun aman — dikerjakan manual, bukan bot
+          Akun aman & followers permanent — cukup kirim username Roblox
         </div>
+        <!-- ★ UPDATED prices: 3k=100k, tambah 5k=120k -->
         <div class="p-prices">
           <div class="p-price"><span class="p-label">1.000 Followers</span><span class="p-val">Rp 40.000</span></div>
           <div class="p-price"><span class="p-label">2.000 Followers</span><span class="p-val">Rp 70.000</span></div>
-          <div class="p-price"><span class="p-label">3.000 Followers</span><span class="p-val">Rp 140.000</span></div>
+          <div class="p-price"><span class="p-label">3.000 Followers</span><span class="p-val">Rp 100.000</span></div>
+          <div class="p-price"><span class="p-label">5.000 Followers</span><span class="p-val">Rp 120.000</span></div>
         </div>
         <button class="p-btn">Order Now →</button>
       </div>
@@ -606,9 +585,7 @@
       <!-- Joki HSR Stellar Jade -->
       <div class="produk-card joki-hsr reveal rd1" onclick="openM('hsr')">
         <div class="p-icon ic-hsr">
-          <!-- ★ assets/hsr-logo.png -->
-          <img src="assets/hsr-logo.png" alt="Honkai Star Rail"
-               onerror="this.style.display='none';this.parentElement.innerHTML='💎'"/>
+          <img src="assets/hsr-logo.png" alt="Honkai Star Rail" onerror="this.style.display='none';this.parentElement.innerHTML='💎'"/>
         </div>
         <span class="p-badge pb-joki">JOKI</span>
         <div class="p-name">Honkai: Star Rail — Stellar Jade</div>
@@ -714,9 +691,7 @@
 
 <div class="toast" id="toast">✅ Number copied!</div>
 
-<!-- ══════════════════════════════════════
-     MODALS — PRODUK
-══════════════════════════════════════ -->
+<!-- MODALS — PRODUK -->
 <div class="modal-overlay" id="m-wac">
   <div class="modal">
     <button class="close-m" onclick="closeM('wac')">✕</button>
@@ -844,9 +819,9 @@
   </div>
 </div>
 
-<!-- ══════════════════════════════════════
-     MODALS — JOKI
-══════════════════════════════════════ -->
+<!-- MODALS — JOKI -->
+
+<!-- ★ UPDATED: Modal Roblox Followers -->
 <div class="modal-overlay" id="m-rbx">
   <div class="modal">
     <button class="close-m" onclick="closeM('rbx')">✕</button>
@@ -855,12 +830,19 @@
       <div class="m-ico" style="background:var(--red-dim)">
         <img src="assets/roblox-logo.png" alt="Roblox" onerror="this.style.display='none';this.parentElement.innerHTML='🎮'"/>
       </div>
-      <div><div class="m-title">Roblox Followers</div><div class="m-sub">Manual joki — 100% aman</div></div>
+      <div><div class="m-title">Roblox Followers</div><div class="m-sub">Permanent · Aman · Cepat</div></div>
     </div>
     <div class="fg"><label class="fl">Roblox Profile Link</label><input class="fi" id="rbx-l" placeholder="https://roblox.com/users/..."/></div>
     <div class="fg"><label class="fl">Roblox Username</label><input class="fi" id="rbx-u" placeholder="Your Roblox username"/></div>
-    <div class="fg"><label class="fl">Select Package</label><select class="fs" id="rbx-p"><option value="1.000 Followers — Rp 40.000">1.000 Followers — Rp 40.000</option><option value="2.000 Followers — Rp 70.000">2.000 Followers — Rp 70.000</option><option value="3.000 Followers — Rp 140.000">3.000 Followers — Rp 140.000</option></select></div>
-    <div class="alert alert-safe"><div class="alert-t">✅ 100% Aman</div>Ini <strong>bukan bot</strong> — followers dikerjakan secara <strong>manual</strong> oleh tim kami. Akun Roblox kamu tetap aman, no ban, no risk!</div>
+    <!-- ★ UPDATED select options: 3k=100k, tambah 5k=120k -->
+    <div class="fg"><label class="fl">Select Package</label><select class="fs" id="rbx-p">
+      <option value="1.000 Followers — Rp 40.000">1.000 Followers — Rp 40.000</option>
+      <option value="2.000 Followers — Rp 70.000">2.000 Followers — Rp 70.000</option>
+      <option value="3.000 Followers — Rp 100.000">3.000 Followers — Rp 100.000</option>
+      <option value="5.000 Followers — Rp 120.000">5.000 Followers — Rp 120.000</option>
+    </select></div>
+    <!-- ★ UPDATED alert safe text -->
+    <div class="alert alert-safe"><div class="alert-t">✅ Followers Permanent & Aman</div>Followers <strong>tidak akan hilang</strong> — akun Roblox kamu tetap aman, no ban, no risk. Cukup kirim <strong>username Roblox</strong>, tidak perlu data login!</div>
     <div class="fg"><label class="fl">Notes (optional)</label><input class="fi" id="rbx-n" placeholder="Any special requests..."/></div>
     <button class="wa-send" onclick="sendO('rbx')">💬 Send Order via WhatsApp</button>
     <div class="m-note">💳 <strong>DANA:</strong> 081224131606 (Ridho Arrayan) — kirim bukti transfer setelah pembayaran.</div>
@@ -953,7 +935,7 @@ function sendO(t) {
     const u = document.getElementById("rbx-u").value || "-";
     const p = document.getElementById("rbx-p").value;
     const n = document.getElementById("rbx-n").value || "-";
-    msg = base + `🎮 *Service:* Roblox Followers (JOKI MANUAL)\n🔗 *Profile Link:* ${l}\n👤 *Username:* ${u}\n📦 *Package:* ${p}\n📝 *Notes:* ${n}\n──────────────\n✅ *BUKAN BOT — dikerjakan manual, 100% aman!*\n💙 *DANA:* 081224131606\n📸 Kirim bukti transfer!`;
+    msg = base + `🎮 *Service:* Roblox Followers\n🔗 *Profile Link:* ${l}\n👤 *Username:* ${u}\n📦 *Package:* ${p}\n📝 *Notes:* ${n}\n──────────────\n✅ *Followers permanent, akun aman, no ban!*\n💙 *DANA:* 081224131606\n📸 Kirim bukti transfer!`;
   } else if (t === "hsr") {
     const srv = document.getElementById("hsr-srv").value;
     const p = document.getElementById("hsr-p").value;
